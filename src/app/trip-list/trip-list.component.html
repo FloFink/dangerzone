@@ -1,9 +1,18 @@
 <h1>{{title}}</h1>
-<mat-selection-list #trips>
-    <mat-list-option *ngFor="let trip of tripList">
-        <p class="list-item">
-            <img src={{trip.url}} height="50">
-            {{trip.title}}
-        </p>
-    </mat-list-option>
-</mat-selection-list>
+
+<p *ngFor="let trip of tripList">
+    <mat-card class="trip-card">
+        <mat-card-header>
+            <mat-card-title>{{trip.title}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src={{trip.url}} width="400">
+        <mat-card-content>
+            <p>
+                {{trip.description}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>Details</button>
+        </mat-card-actions>
+    </mat-card>
+</p>
