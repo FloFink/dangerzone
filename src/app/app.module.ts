@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,13 +10,19 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatCardModule} from '@angular/material/card'; 
 import { TripListComponent } from './trip-list/trip-list.component';
 import { MatListModule } from '@angular/material/list';
+import {ExampleRoutingComponent} from './example-routing/example-routing.component';
+import {HeaderMenuComponent} from './header-menu/header-menu.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TripDetailsComponent,
-    TripListComponent
+    TripListComponent,
+    ExampleRoutingComponent,
+    HeaderMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -24,9 +30,12 @@ import { MatListModule } from '@angular/material/list';
     BrowserAnimationsModule,
     MatSliderModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
