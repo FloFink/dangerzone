@@ -8,19 +8,23 @@ import { HomeComponent } from './home/home.component';
 import { TripDetailsComponent } from './trip-details/trip-details.component';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatCardModule} from '@angular/material/card'; 
+import { TripListComponent } from './trip-list/trip-list.component';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TripDetailsComponent
+    TripDetailsComponent,
+    TripListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
