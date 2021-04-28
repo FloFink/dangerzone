@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripListComponent implements OnInit {
 
+  title = "Available Trips"
   tripList = [
     {
         "title": "Tauche zum tiefsten Punkt der Erde",

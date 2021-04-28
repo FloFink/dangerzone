@@ -1,6 +1,9 @@
+<h1>{{title}}</h1>
 <mat-selection-list #trips>
     <mat-list-option *ngFor="let trip of tripList">
-        <b>{{trip.title}}</b>
-        <img src={{trip.url}} height="100" width="100">
+        <p class="list-item">
+            <img src={{trip.url}} height="50">
+            {{trip.title}}
+        </p>
     </mat-list-option>
 </mat-selection-list>
