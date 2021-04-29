@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-feedback',
@@ -6,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feedback-form.component.scss']
 })
 export class FeedbackFormComponent implements OnInit {
-
-  constructor() { }
+  checkoutForm = this.formBuilder.group({
+    name: '',
+    email: '',
+    feedback: ''
+  });
+  constructor(
+    private formBuilder: FormBuilder,
+    ) {}
 
   ngOnInit(): void {
   }
-  onClick() {
+  onSave(): void {
+    console.warn('user feedback:', this.checkoutForm.value);
 
   }
 
