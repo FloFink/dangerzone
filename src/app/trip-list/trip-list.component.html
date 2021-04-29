@@ -1,4 +1,5 @@
-<h1>{{title}}</h1>
+<div class="card">
+<h1 class="red-color trip-list-header card">{{title}}</h1>
 <div class="trip-list">
   <a style="cursor: pointer" routerLink="/trip-detail/{{trip.id}}" *ngFor="let trip of tripList">
     <div style="padding-top: 10px;">
@@ -12,4 +13,5 @@
       </mat-card>
     </div>
   </a>
+</div>
 </div>
