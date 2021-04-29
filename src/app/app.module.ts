@@ -7,10 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { TripDetailsComponent } from './trip-details/trip-details.component';
 import { MatSliderModule } from '@angular/material/slider';
-import {MatCardModule} from '@angular/material/card'; 
+import {MatCardModule} from '@angular/material/card';
 import { TripListComponent } from './trip-list/trip-list.component';
 import { MatListModule } from '@angular/material/list';
-import {ExampleRoutingComponent} from './example-routing/example-routing.component';
 import {HeaderMenuComponent} from './header-menu/header-menu.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -21,7 +20,6 @@ import {MatIconModule} from '@angular/material/icon';
     HomeComponent,
     TripDetailsComponent,
     TripListComponent,
-    ExampleRoutingComponent,
     HeaderMenuComponent
   ],
   imports: [
