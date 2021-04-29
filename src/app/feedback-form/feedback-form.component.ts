@@ -20,7 +20,6 @@ export class FeedbackFormComponent implements OnInit {
   }
   onSave(): void {
     console.warn('user feedback:', this.checkoutForm.value);
-
   }
 
 }
