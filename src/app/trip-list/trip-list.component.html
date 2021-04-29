@@ -1,6 +1,6 @@
 <h1>{{title}}</h1>
 <div align="center">
-  <a style="cursor: pointer" routerLink="{{ trip.id }}" *ngFor="let trip of tripList">
+  <a style="cursor: pointer" routerLink="/trip-detail/{{trip.id}}" *ngFor="let trip of tripList">
     <div style="padding-top: 10px;">
       <mat-card class="trip-card">
         <mat-card-header>
