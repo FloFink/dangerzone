@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import {HeaderMenuComponent} from './header-menu/header-menu.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatIconModule} from '@angular/material/icon';
     HomeComponent,
     TripDetailsComponent,
     TripListComponent,
-    HeaderMenuComponent
+    HeaderMenuComponent,
+    FeedbackFormComponent
   ],
   imports: [
     BrowserModule,
