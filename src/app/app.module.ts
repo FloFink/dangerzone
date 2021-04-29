@@ -14,6 +14,7 @@ import {ExampleRoutingComponent} from './example-routing/example-routing.compone
 import {HeaderMenuComponent} from './header-menu/header-menu.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatIconModule} from '@angular/material/icon';
     TripDetailsComponent,
     TripListComponent,
     ExampleRoutingComponent,
-    HeaderMenuComponent
+    HeaderMenuComponent,
+    FeedbackFormComponent
   ],
   imports: [
     BrowserModule,
