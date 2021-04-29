@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+
+import activities from '../../../activities.json';
 
 @Component({
   selector: 'app-trip-details',
@@ -41,9 +42,9 @@ export class TripDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.id = Number(this.route.snapshot.paramMap.get('id')) - 1 || 0
     
-    this.title = this.tripList[this.id]['title'];
-    this.description = this.tripList[this.id]['description'];
-    this.url = this.tripList[this.id]['url'];
+    this.title = activities[this.id]['title'];
+    this.description = activities[this.id]['description'];
+    this.url = activities[this.id]['url'];
   }
 
 }
