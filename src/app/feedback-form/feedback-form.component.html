@@ -1,7 +1,27 @@
 <p>Hier können Sie Ihren Kommentar abgeben</p>
-<fieldset name="feedback">
-  <p> Ihr Name:<input type="text" ></p> 
-  <p> Ihre Email:<input type="email"></p>
-  <p> Ihre Nachricht: <textarea name="feedback_test" id="" cols="30" rows="5"></textarea></p>
-</fieldset>
-<button id = "feed">Save Feedback</button>
+<form (ngSubmit)="onSave()">
+
+        <div>
+          <label for="name">
+            Name
+          </label>
+          <input id="name" type="text" formControlName="name">
+        </div>
+      
+        <div>
+          <label for="email">
+            Email
+          </label>
+          <input id="email" type="text" formControlName="email">
+        </div>
+
+        <div>
+            <label for="Feedback">
+              Ihre Nachricht
+            </label>
+            <textarea id="feedback" type="text" formControlName="feedback"></textarea>
+        </div>
+      
+        <button (click)="onSave()">Save Feedback</button>
+      
+</form>
