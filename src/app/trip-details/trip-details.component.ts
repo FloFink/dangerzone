@@ -39,7 +39,7 @@ export class TripDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = Number(this.route.snapshot.paramMap.get('id'))|| 0
+    this.id = Number(this.route.snapshot.paramMap.get('id')) - 1 || 0
     
     this.title = this.tripList[this.id]['title'];
     this.description = this.tripList[this.id]['description'];
