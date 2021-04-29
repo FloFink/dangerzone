@@ -1,18 +1,15 @@
 <h1>{{title}}</h1>
-
-<p *ngFor="let trip of tripList">
-    <mat-card class="trip-card">
+<div align="center">
+  <a style="cursor: pointer" routerLink="{{ trip.id }}" *ngFor="let trip of tripList">
+    <div style="padding-top: 10px;">
+      <mat-card class="trip-card">
         <mat-card-header>
-            <mat-card-title>{{trip.title}}</mat-card-title>
+          <mat-card-title>{{trip.title}}</mat-card-title>
         </mat-card-header>
-        <img mat-card-image src={{trip.url}} width="400">
-        <mat-card-content>
-            <p>
-                {{trip.description}}
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-            <button mat-button>Details</button>
-        </mat-card-actions>
-    </mat-card>
-</p>
+        <div style="height: 300px">
+          <img mat-card-image src={{trip.url}} style="max-width: 400px; padding: 15px;">
+        </div>
+      </mat-card>
+    </div>
+  </a>
+</div>
