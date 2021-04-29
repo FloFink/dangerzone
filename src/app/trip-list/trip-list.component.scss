@@ -1,14 +1,19 @@
-img {
-    float: left;
-    width: auto;
-    height: 100;
-  }
-p.list-item {
-    background-color: lightgray;
-    color: black;
-    font-weight: bold;
+mat-card {
+  max-width: 400px;
+  cursor: pointer;
+  width: 430px;
 }
 
-.trip-card {
+div.trip-list {
+  padding-left: 15px;
+}
+
+div.card-image {
+  display: inline-block;
+}
+
+img.card-image {
   max-width: 400px;
+  padding: 15px;
+  padding-bottom: 0px;
 }

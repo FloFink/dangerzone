@@ -1,13 +1,13 @@
 <h1>{{title}}</h1>
-<div align="center">
+<div class="trip-list">
   <a style="cursor: pointer" routerLink="/trip-detail/{{trip.id}}" *ngFor="let trip of tripList">
     <div style="padding-top: 10px;">
-      <mat-card class="trip-card">
+      <mat-card routerLink="{{ trip.id }}">
         <mat-card-header>
           <mat-card-title>{{trip.title}}</mat-card-title>
         </mat-card-header>
-        <div style="height: 300px">
-          <img mat-card-image src={{trip.url}} style="max-width: 400px; padding: 15px;">
+        <div class="card-image">
+          <img mat-card-image src={{trip.url}} class="card-image">
         </div>
       </mat-card>
     </div>
