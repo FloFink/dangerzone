@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-feedback',
@@ -12,12 +12,15 @@ export class FeedbackFormComponent implements OnInit {
     email: '',
     feedback: ''
   });
+
   constructor(
     private formBuilder: FormBuilder,
-    ) {}
+  ) {
+  }
 
   ngOnInit(): void {
   }
+
   onSave(): void {
     console.warn('user feedback:', this.checkoutForm.value);
   }

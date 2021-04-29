@@ -1,27 +1,29 @@
-<p>Hier können Sie Ihren Kommentar abgeben</p>
-<form (ngSubmit)="onSave()">
+<div class="feedback-container">
+  <p>Hier können Sie Ihren Kommentar abgeben</p>
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSave()">
 
-        <div>
-          <label for="name">
-            Name
-          </label>
-          <input id="name" type="text" formControlName="name">
-        </div>
-      
-        <div>
-          <label for="email">
-            Email
-          </label>
-          <input id="email" type="text" formControlName="email">
-        </div>
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
 
-        <div>
-            <label for="Feedback">
-              Ihre Nachricht
-            </label>
-            <textarea id="feedback" type="text" formControlName="feedback"></textarea>
-        </div>
-      
-        <button (click)="onSave()">Save Feedback</button>
-      
-</form>
+    <div>
+      <label for="email">
+        Email
+      </label>
+      <input id="email" type="text" formControlName="email">
+    </div>
+
+    <div>
+      <label for="Feedback">
+        Ihre Nachricht
+      </label>
+      <textarea id="feedback" type="text" formControlName="feedback"></textarea>
+    </div>
+
+    <button (click)="onSave()">Save Feedback</button>
+
+  </form>
+</div>
