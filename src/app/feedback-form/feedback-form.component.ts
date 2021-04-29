@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder} from '@angular/forms';
+import {FormGroup, FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-feedback',
@@ -7,22 +7,22 @@ import {FormBuilder} from '@angular/forms';
   styleUrls: ['./feedback-form.component.scss']
 })
 export class FeedbackFormComponent implements OnInit {
-  checkoutForm = this.formBuilder.group({
-    name: '',
-    email: '',
-    feedback: ''
-  });
 
-  constructor(
-    private formBuilder: FormBuilder,
-  ) {
+  feedbackForm: FormGroup;
+
+  constructor() {
+    this.feedbackForm = new FormGroup({
+      'name': new FormControl('', Validators.required),
+      'email': new FormControl('', [Validators.required, Validators.email]),
+      'message': new FormControl('', Validators.required)
+    });
   }
 
   ngOnInit(): void {
   }
 
-  onSave(): void {
-    console.warn('user feedback:', this.checkoutForm.value);
+  onSubmit() {
+    console.log(this.feedbackForm.value);
   }
 
 }
