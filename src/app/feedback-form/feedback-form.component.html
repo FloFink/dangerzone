@@ -1,17 +1,18 @@
-<form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()" class="feedback-container">
-  <p>Hier können Sie Ihren Kommentar abgeben</p>
+<div class="feedback-container">
+<form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()" class="feedback-form">
+  <h2 class="red-color">Hier können Sie Ihren Kommentar abgeben</h2>
   <fieldset name="feedback">
-    <div class="form-group">
+    <div >
       <label for="name">Ihr Name: </label>
       <input type="text" id="name" class="form-control" formControlName="name" [ngClass]="{'error': nameIsInvalid}">
       <p class="error-text" *ngIf="nameIsInvalid">Bitte geben Sie einen Namen ein</p>
     </div>
-    <div class="form-group">
+    <div >
       <label for="email">Ihre Email:</label>
       <input type="email" id="email" class="form-control" formControlName="email" [ngClass]="{'error': emailIsInvalid}">
       <p class="error-text" *ngIf="emailIsInvalid">Bitte geben Sie eine valide E-Mail Adresse ein</p>
     </div>
-    <div class="form-group">
+    <div>
       <label for="message">Ihre Nachricht:</label>
       <textarea name="feedback_test" id="message" cols="30" rows="5" class="form-control" formControlName="message" [ngClass]="{'error': messageIsInvalid}">
       </textarea>
@@ -20,5 +21,8 @@
   </fieldset>
   <button type="submit" id="feed" [disabled]="feedbackForm.invalid">Save Feedback</button>
 
+  <h3 *ngIf="feedbackSent" class="red-color">Vielen Dank für Ihren Kommentar! Wir werden uns bemühen noch gefährlichere Abenteuer für Sie zu finden!!!</h3>
+
 </form>
 
+</div>

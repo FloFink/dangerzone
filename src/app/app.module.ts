@@ -15,6 +15,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {FeedbackFormComponent} from './feedback-form/feedback-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatToolbarModule,
     MatIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
