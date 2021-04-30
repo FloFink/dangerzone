@@ -3,56 +3,65 @@
     "id": 1,
     "title": "Tauche zum tiefsten Punkt der Erde",
     "description": "Tauche ab in den Mariannengraben bis zum tiefsten Punkt der Erde. Mit modernsten Technologien konnten wir eine Überlebensrate von über 50% erreichen. Es gibt also keinen Grund mehr es nicht zu tun.",
-    "url": "https://www.ard.de/image/104108/16x9/4788850120469361433/512"
+    "url": "https://www.ard.de/image/104108/16x9/4788850120469361433/512",
+    "danger": 4
   },
   {
     "id": 2,
     "title": "Erlebe einen Flugzeugabsturz",
     "description": "Sei Teil eines Flugzeugabsturzes und erlebe was es heisst dem Tod ins Auge zu blicken.",
-    "url": "https://i.ytimg.com/vi/SmHY3xqRmP4/maxresdefault.jpg"
+    "url": "https://i.ytimg.com/vi/SmHY3xqRmP4/maxresdefault.jpg",
+    "danger": 3
   },
   {
     "id": 3,
     "title": "Sei ein Auto",
     "description": "Du wolltest schon immer einmal erleben wie sich Geschwindigkeit am eigenen Leib anfühlt? Dann sei Teil eines Autos und erlebe es! Zur Wahl steht eine Montage an der Front, Seite oder dem Heck.",
-    "url": "https://drivetribe.imgix.net/XgpFfu-4RDqvfHbIpyuNwA?w=2200&h=1237&fm=pjpg&auto=compress&fit=crop&crop=faces&max-w=1280&max-h=720"
-
+    "url": "https://drivetribe.imgix.net/XgpFfu-4RDqvfHbIpyuNwA?w=2200&h=1237&fm=pjpg&auto=compress&fit=crop&crop=faces&max-w=1280&max-h=720",
+    "danger": 2
   },{
     
     "id": 4,
     "title": "Bade in einem aktiven Vulkan",
     "description": "Besuche den Vesuv und bade in seinen heißen Fluten. Ein Asbest-Overall ist im Preis inbegriffen.",
-    "url": "https://image.geo.de/30044878/t/zF/v3/w1440/r1.7778/-/teaser-jpg--18805-.jpg"
+    "url": "https://image.geo.de/30044878/t/zF/v3/w1440/r1.7778/-/teaser-jpg--18805-.jpg",
+    "danger": 5
   }  ,
   {
     "id": 5,
     "title": "Durchquere die Antarktis mit Tourenskiern",
     "description": "Erlebe extreme Kälte und totale Kameradschaft. Wer mit allen Zehen und Fingern zurückkommt, ist der absolute Sieger!",
-    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQK40I0_Hz5Nw835unMq4ivfXxwh0DmWHHtg&usqp=CAU"
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQK40I0_Hz5Nw835unMq4ivfXxwh0DmWHHtg&usqp=CAU",
+    "danger": 3
   },{
     "id": 6,
     "title": "Schwimme durchs Mittelmeer",
-    "description": "Erlebe es an deine körperlichen Grenzen zu gehen, wenn du durch den Golf von Gibraltar schwimmst. Zusammen mit Ozeandampfern und Fischerbooten",
-    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzjISyyoZU8dikY7IXsPS1hDYIM_5j5RYLA&usqp=CAU"
+    "description": "Erlebe es an deine körperlichen Grenzen zu gehen, wenn du durch den Golf von Gibraltar schwimmst. Zusammen mit Ozeandampfern und Fischerbooten - und Haien",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzjISyyoZU8dikY7IXsPS1hDYIM_5j5RYLA&usqp=CAU",
+    "danger": 3
   },{
     "id": 7,
     "title": "Tauchen vor Fukushima",
-    "description": "Entdecke komplett neue Spezies und sei der erste der neue Mutationen testet.",
-    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlmlvs5Z_nQL6UyZMr4yDDRiA8ZLRMMPGheg&usqp=CAU"
+    "description": "Entdecke komplett neue Spezies und sei der erste der neue Mutationen entdeckt. Vielleicht sogar an dir selbst.",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlmlvs5Z_nQL6UyZMr4yDDRiA8ZLRMMPGheg&usqp=CAU",
+    "danger": 5
   },{    
     "id": 8,
     "title": "Pokerabend mit der Mafia",
     "description": "Bringe dein eigenes Geld und geh mit deinem Leben - Wenn du Glück hast.",
-    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJkfMeo2q9Jqa-wktGpkfIkUX0TzFNzIeReg&usqp=CAU"
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJkfMeo2q9Jqa-wktGpkfIkUX0TzFNzIeReg&usqp=CAU",
+    "danger": 3
   }, {
     "id": 9,
-    "title": "Durchquere die Antarktis mit Tourenskiern",
-    "description": "Erlebe extreme Kälte und totale Kameradschaft. Wer mit allen Zehen und Fingern zurückkommt, ist der absolute Sieger!",
-    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQK40I0_Hz5Nw835unMq4ivfXxwh0DmWHHtg&usqp=CAU"
+    "title": "Schatzsucher? -Minenräumer",
+    "description": "Entdecke menschenleere Landschaften und finde unentdeckte Schätze. Werde für einige Tage Minenräumer in ehemaligem Kriegsgebiet",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8AM8WCwbbvIRDkzMwfCnTk2vJajb0anf40A&usqp=CAU",
+    "danger": 4
   },{
     "id": 10,
-    "title": "Schwimme durchs Mittelmeer",
-    "description": "Erlebe es an deine körperlichen Grenzen zu gehen, wenn du durch den Golf von Gibraltar schwimmst. Zusammen mit Ozeandampfern und Fischerbooten",
-    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzjISyyoZU8dikY7IXsPS1hDYIM_5j5RYLA&usqp=CAU"
+    "title": "Testspringer für neue Bungeeseile",
+    "description": "Sei der erste der ein neues Seil ausprobiert und liefere wertvolle Daten zu Zugkraft und Reißfestigkeit. ",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbY8UHHlA4XtvLDluEuAd1ii_A5NNJr01Apw&usqp=CAU",
+    "danger": 1
   }
 ]
