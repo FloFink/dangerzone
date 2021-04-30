@@ -16,6 +16,7 @@ export class TripDetailsComponent implements OnInit {
   public title: string = '';
   public description: string = '';
   public url: string = '';
+  public danger: number = 1;
 
 
   openDialog() {
@@ -36,6 +37,7 @@ export class TripDetailsComponent implements OnInit {
     this.title = activities[this.id]['title'];
     this.description = activities[this.id]['description'];
     this.url = activities[this.id]['url'];
+    this.danger = activities[this.id]['danger'] || 3;
   }
 
 }

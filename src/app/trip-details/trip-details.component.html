@@ -1,7 +1,6 @@
 <div class="card">
   <mat-card class="example-card">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{title}}</mat-card-title>
       ´
     </mat-card-header>
@@ -11,11 +10,11 @@
         {{description}}
       </p>
       <p>
-        {{id}}
+        Dangerousness:&nbsp;
+        <ng-container *ngFor="let i of [].constructor(danger)">☠️</ng-container>
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>Book</button>
     </mat-card-actions>
   </mat-card>
 </div>
