@@ -37,7 +37,7 @@ export class TripDetailsComponent implements OnInit {
     this.title = activities[this.id]['title'];
     this.description = activities[this.id]['description'];
     this.url = activities[this.id]['url'];
-    this.danger = activities[this.id]['danger'] || 1;
+    this.danger = activities[this.id]['danger'] || 3;
   }
 
 }
