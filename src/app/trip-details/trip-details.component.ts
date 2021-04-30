@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {MatDialog} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 
 import activities from '../../../activities.json';
 import { ImageModalComponent } from '../image-modal/image-modal.component';
@@ -21,6 +21,9 @@ export class TripDetailsComponent implements OnInit {
 
   openDialog() {
     const dialogRef = this.dialog.open(ImageModalComponent, {
+      height: '90%',
+      width: '90%',
+      panelClass: 'full-screen-modal',
       data: this.url
     });
 
@@ -33,7 +36,7 @@ export class TripDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = Number(this.route.snapshot.paramMap.get('id')) - 1 || 0
-    
+
     this.title = activities[this.id]['title'];
     this.description = activities[this.id]['description'];
     this.url = activities[this.id]['url'];
