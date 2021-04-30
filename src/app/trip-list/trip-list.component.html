@@ -11,6 +11,12 @@
             <div class="card-image">
               <img mat-card-image src={{trip.url}} class="card-image">
             </div>
+            <mat-card-content>
+              <p>
+                Dangerousness:&nbsp;
+                <ng-container *ngFor="let i of [].constructor(trip.danger)">☠️</ng-container>
+              </p>
+            </mat-card-content>
           </mat-card>
         </div>
       </div>
