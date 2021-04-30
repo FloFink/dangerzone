@@ -15,6 +15,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {FeedbackFormComponent} from './feedback-form/feedback-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ImageModalComponent } from './image-modal/image-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     TripDetailsComponent,
     TripListComponent,
     HeaderMenuComponent,
-    FeedbackFormComponent
+    FeedbackFormComponent,
+    ImageModalComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatToolbarModule,
     MatIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
