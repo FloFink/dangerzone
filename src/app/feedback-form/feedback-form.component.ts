@@ -9,6 +9,7 @@ import {FormGroup, FormControl, Validators} from '@angular/forms';
 export class FeedbackFormComponent implements OnInit {
 
   feedbackForm: FormGroup;
+  feedbackSent = false;
 
   constructor() {
     this.feedbackForm = new FormGroup({
@@ -23,6 +24,7 @@ export class FeedbackFormComponent implements OnInit {
 
   onSubmit() {
     console.log(this.feedbackForm.value);
+    this.feedbackSent = true;
     this.feedbackForm.reset();
   }
 
