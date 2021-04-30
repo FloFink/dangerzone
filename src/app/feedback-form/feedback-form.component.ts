@@ -23,6 +23,22 @@ export class FeedbackFormComponent implements OnInit {
 
   onSubmit() {
     console.log(this.feedbackForm.value);
+    this.feedbackForm.reset();
+  }
+
+  get nameIsInvalid(): boolean {
+    let name = this.feedbackForm.get("name");
+    return name != null && name.touched && name.invalid;
+  }
+
+  get emailIsInvalid(): boolean {
+    let email = this.feedbackForm.get("email");
+    return email != null && email.touched && email.invalid;
+  }
+
+  get messageIsInvalid() {
+    let message = this.feedbackForm.get("message");
+    return message != null && message.touched && message.invalid;
   }
 
 }
