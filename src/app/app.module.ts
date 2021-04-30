@@ -16,7 +16,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {FeedbackFormComponent} from './feedback-form/feedback-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
-import { ImageModalComponent } from './image-modal/image-modal.component';
+import {ImageModalComponent} from './image-modal/image-modal.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ImageModalComponent } from './image-modal/image-modal.component';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
