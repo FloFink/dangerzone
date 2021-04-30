@@ -8,13 +8,13 @@ import activities from '../../../activities.json';
 })
 export class TripListComponent implements OnInit {
 
-  title = 'Available Trips';
+  title = 'Mögliche Erlebnisse';
   tripList = activities;
 
   selected = 0;
 
-  foods = [
-    {value: 0, viewValue: 'Any'},
+  dangerousenesses = [
+    {value: 0, viewValue: 'Alle'},
     {value: 1, viewValue: '☠️'},
     {value: 2, viewValue: '☠️☠️'},
     {value: 3, viewValue: '☠️☠️☠️'},

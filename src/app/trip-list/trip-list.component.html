@@ -2,10 +2,10 @@
   <h1 class="red-color trip-list-header card">{{title}}</h1>
   <div class="trip-list">
     <mat-form-field appearance="fill">
-      <mat-label>Dangerousness</mat-label>
+      <mat-label>Gefahren-Faktor</mat-label>
       <mat-select [(value)]="selected">
-        <mat-option *ngFor="let food of foods" [value]="food.value">
-          {{food.viewValue}}
+        <mat-option *ngFor="let dangouresness of dangerousenesses" [value]="dangouresness.value">
+          {{dangouresness.viewValue}}
         </mat-option>
       </mat-select>
     </mat-form-field>
@@ -21,7 +21,7 @@
             </div>
             <mat-card-content>
               <p>
-                Dangerousness:&nbsp;
+                Gefahren-Faktor
                 <ng-container *ngFor="let i of [].constructor(trip.danger)">☠️</ng-container>
               </p>
             </mat-card-content>
