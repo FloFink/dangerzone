@@ -17,6 +17,7 @@ import {FeedbackFormComponent} from './feedback-form/feedback-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ImageModalComponent } from './image-modal/image-modal.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ImageModalComponent } from './image-modal/image-modal.component';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,16 @@
 <div class="card">
   <h1 class="red-color trip-list-header card">{{title}}</h1>
   <div class="trip-list">
+    <mat-form-field appearance="fill">
+      <mat-label>Dangerousness</mat-label>
+      <mat-select [(value)]="selected">
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
     <a style="cursor: pointer" routerLink="/trip-detail/{{trip.id}}" *ngFor="let trip of tripList">
-      <div>
+      <div *ngIf="selected == 0 || selected == trip.danger">
         <div style="padding-top: 10px;">
           <mat-card>
             <mat-card-header>
